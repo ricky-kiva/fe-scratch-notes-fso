@@ -1,7 +1,16 @@
-function App() {
+const  App = ({ notes }) => {
 
   return (
-    <div>{`I don't care it's all psychobabble rap to me`}</div>
+    <div>
+      <h1>Notes</h1>
+      <ul>
+        {notes.map(note => 
+          <li>
+            {note.content}
+          </li>
+        )}
+      </ul>
+    </div>
   )
 }
 
