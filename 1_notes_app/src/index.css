@@ -8,3 +8,14 @@ h1 {
     padding-top: 5px;
     font-size: 15px;
 }
+
+.error {
+    width: 384px;
+    color: maroon;
+    background: lightgrey;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
