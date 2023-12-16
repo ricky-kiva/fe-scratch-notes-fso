@@ -2,9 +2,16 @@ import axios from 'axios'
 
 const baseUrl = 'http://localhost:3001/notes'
 
+// to demonstrate handling promise error
+const nonExist = {
+    id: 999,
+    content: 'CHANGE THIS NOTE IMPORTANCE',
+    import: true
+}
+
 const getAll = () => axios
     .get(baseUrl)
-    .then(response => response.data)
+    .then(response => response.data.concat(nonExist))
 
 const create = newObject => axios
     .post(baseUrl, newObject)

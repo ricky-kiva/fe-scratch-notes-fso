@@ -18,5 +18,6 @@ module.exports = {
     ],
     'react/prop-types': 1,
     'react/jsx-key': [1, { checkFragmentShorthand: true }],
+    'no-unused-vars': 1
   },
 }
